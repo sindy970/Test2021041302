@@ -6,7 +6,7 @@ public class Ex01_ArrayStudent {
 
 	public static void main(String[] args) {
 		// 학생 관리 및 점수 입력 프로그램
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);  
 		int[] student = null;
 		int cho = 0, stu = 0;
 		int max = 0;
@@ -32,22 +32,22 @@ public class Ex01_ArrayStudent {
 				for (int i = 0; i < student.length; i++) {
 					System.out.print((i + 1) + "번째 학생 점수 : ");
 					student[i] = sc.nextInt();
-				} // for
+				} // for 학생 점수 입력받는 반복문
 				break;
 				
 			case 3:
 				for (int i = 0; i < student.length; i++) {
 					System.out.println((i + 1) + "번째 학생 점수 : " + student[i]);
-				} // for
+				} // for 학생 점수 출력하는 반복문
 				break;
 				
 			case 4:
 				for (int i = 0; i < student.length; i++) {
 					if (student[i] > max) {
 						max = student[i];
-					} // if
+					} // if 최대값을 구하기 위한 조건문
 					avg = avg + student[i];
-				} // for
+				} // for 최대값,평균 구하는 반복문
 				for (int i = 0; i < student.length; i++) {
 					for (int j = i + 1; j < student.length; j++) {
 						int temp = 0;
@@ -55,14 +55,14 @@ public class Ex01_ArrayStudent {
 							temp = student[i];
 							student[i] = student[j];
 							student[j] = temp;
-						} // if
-					} // for
-				} // for
+						} // if 내림차순으로 정렬하기 위한 조건문
+					} // for j반복문
+				} // for i반복문
 				System.out.println("최고점수 : " + max);
 				System.out.println("평균점수 : " + (avg / stu));
 				for (int i = 0; i < student.length; i++) {
 					System.out.println(student[i]);
-				} // for
+				} // for 출력하기 위한 반복문
 				break;
 				
 			case 5:

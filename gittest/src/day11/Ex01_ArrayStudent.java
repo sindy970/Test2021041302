@@ -48,9 +48,12 @@ public class Ex01_ArrayStudent {
 					} // if 최대값을 구하기 위한 조건문
 					avg = avg + student[i];
 				} // for 최대값,평균 구하는 반복문
+				System.out.println("최고점수 : " + max);
+				System.out.println("평균점수 : " + (avg / stu));
+				
+				int temp = 0;
 				for (int i = 0; i < student.length; i++) {
 					for (int j = i + 1; j < student.length; j++) {
-						int temp = 0;
 						if (student[i] < student[j]) {
 							temp = student[i];
 							student[i] = student[j];
@@ -58,8 +61,7 @@ public class Ex01_ArrayStudent {
 						} // if 내림차순으로 정렬하기 위한 조건문
 					} // for j반복문
 				} // for i반복문
-				System.out.println("최고점수 : " + max);
-				System.out.println("평균점수 : " + (avg / stu));
+				
 				for (int i = 0; i < student.length; i++) {
 					System.out.println(student[i]);
 				} // for 출력하기 위한 반복문

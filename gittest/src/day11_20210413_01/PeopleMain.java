@@ -47,21 +47,6 @@ public class PeopleMain {
 		System.out.println(p3.nation); //생성자에서 nation에 관안 언급이 없기 때문에 null이 나온것이다.
 		//매개변수로 선언된 변수의 필드값도 변경 가능하다.
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
 
 }
